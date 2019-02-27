@@ -13,3 +13,12 @@ def sieve_of_eratosthenes(n: int) -> set:
             
     return numberline
 
+
+
+from nltk import ngrams
+
+# (Nicklas) My favorite function: 
+# nltk ngrams <3
+def nick_grams(text,n):
+    tokenize = nltk.word_tokenize(text)
+    return list(ngrams(tokenize, n))
